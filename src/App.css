@@ -3,6 +3,8 @@
 .app-header{
   text-align: center;
   padding: 20px;
+  color: rgb(44, 90, 44);
+  word-spacing: normal;
 }
 
 .header{
@@ -38,7 +40,8 @@
   transform:scale(1.01,1.01);
   -webkit-transform:scale(1.01,1.01);
   -moz-transform:scale(1.01,1.01);
-  box-shadow: 12px 12px 2px 1px rgba(178, 180, 180, 0.2);
+  /* box-shadow: 12px 12px 2px 1px rgba(178, 180, 180, 0.2); */
+  box-shadow: 12px 12px rgba(226, 225, 225,0.3), -1em 0 .4em rgba(221, 221, 217,0.3);
   transition:transform box-shadow .5s ease-in-out;
 }
 
@@ -51,9 +54,4 @@
 
 .translate-btn{
   height:3.5rem;
-}
-
-.text-to-translate{
-  border-color:red;
-  border:2px solid red;
 }
