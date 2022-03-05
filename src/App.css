@@ -1,38 +1,59 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+
+.app-header{
+  text-align: center;
+  padding: 20px;
+}
+
+.header{
+  font-family: 'Azeret Mono', monospace;
+  font-size: 30px;
+}
+.app-body{
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .language-select{
+  height: 40px !important;
+  margin-bottom: 15px;
+  outline: none !important;
+} */
+.container{
+  max-width: 80vw;
+  background-color:rgba(240, 245, 245, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px ;
+  gap: 10px;
+  position: relative;
+  padding-right: 4rem !important;
+  transform:scale(1,1);
+  transition: transform  .5s ease-in-out ;
 }
 
-.App-link {
-  color: #61dafb;
+.container:hover{
+  transform:scale(1.01,1.01);
+  -webkit-transform:scale(1.01,1.01);
+  -moz-transform:scale(1.01,1.01);
+  box-shadow: 12px 12px 2px 1px rgba(178, 180, 180, 0.2);
+  transition:transform box-shadow .5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container{
+  width:100%;
+  position:absolute;
+  margin:1rem !important;
+  margin-right:2rem !important;
+}
+
+.translate-btn{
+  height:3.5rem;
+}
+
+.text-to-translate{
+  border-color:red;
+  border:2px solid red;
 }
